@@ -1,0 +1,16 @@
+<ul>
+    <li>nom : {{ info.nom }}</li>
+    <li>email : {{ info.email }}</li>
+    <li>téléphone : {{ info.telephone }}</li>
+</ul>
+<div>
+    <input type="text" [(ngModel)]="nouveauCommentaire.message">
+    <button (click)="ajouterCommentaire()">Ajouter Commentaire</button>
+    <button (click)="suppCommentaire()">Supprimer Commentaire</button>
+</div>
+<div>
+    Liste des Messages :
+    <ul>
+        <li *ngFor="let c of commentaires">{{c.message}}</li>
+    </ul>
+</div>

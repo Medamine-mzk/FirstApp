@@ -1,0 +1,32 @@
+<p>contact works!</p>
+<br><br>
+<!--
+<div *ngIf="1>0">Afficher la div</div>
+<div *ngIf="1<0">N'affiche la div</div>
+
+
+
+
+<div *ngIf="afficherNom; then thenBlock; else elseBlock">
+
+</div>
+<ng-template #thenBlock>
+    Med Amine
+</ng-template>
+<ng-template #elseBlock>
+    *****************
+</ng-template>
+
+<div [ngSwitch]="couleur">
+    <div *ngSwitchCase="'rouge'">Couleur Rouge</div>
+    <div *ngSwitchCase="'bleu'">Couleur Rouge</div>
+    <div *ngSwitchCase="'vert'">Couleur Rouge</div>
+    <div *ngSwitchDefault>Choisir une couleurs</div>
+</div>
+Liste des couleurs :
+<div *ngFor="let c of couleurs">
+    {{ c }}
+</div>
+<div [ngStyle]="styleCorrect">Mohamed Amine !</div>-->
+
+<div [ngClass]="{'text-success':question.isCorrect}">Réponse</div>
